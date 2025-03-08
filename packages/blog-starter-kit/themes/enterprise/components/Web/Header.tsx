@@ -51,7 +51,7 @@ const Header = () => {
 						</button>
 						<nav className="hidden items-center gap-6 text-black/60 md:flex">
 							{navLinks.map((link, index) => (
-								<Link key={index} href={link.href} className="transition-colors hover:text-black">
+								<Link key={index} href={`${rootUrl}/${link.href}`} className="transition-colors hover:text-black">
 									{link.name}
 								</Link>
 							))}
